@@ -2,21 +2,35 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Curso FDP 1 - Modulo - 3</title>
+	
+		<title>Curso FDP 1 - Modulo 3</title>
+	
+	
+		<style>
+		
+				
+		</style>
+		
+		<link rel="stylesheet" type="text/css" href="resources/css/estilo.css" />
+		
+		<script type="text/javascript" src="resources/js/autenticacao.js"></script>
+	
 	</head>
+	
 	<body>
-	
-	<form method="post">
-	<h3>Autenticação</h3>
-	
-	<label>Login:</label> 
-	<input id="txtlogin"type="text" name="txtogin" placeholder="Nome" value=""><br>
-	
-	 <label>Senha:</label> 
-	 <input id="txtsenha" type="password" name="txtsenha" placeholder="Senha" value=""><br>
-	 
-	  <input type="submit" value="Enviar">
-	  
-	</form>
+		
+		
+		<form method="POST"  onsubmit="return a.validar()">
+			
+			<!-- <label> Usuário: </label> -->
+			<input id="txtUsuario" name="txtUsuario" type="text" value="" placeholder="Usuário" style="border-color:red">
+		
+			<!-- <label> Senha: </label> -->
+			<input id="txtSenha" name="txtSenha" type="password" value="" placeholder="Senha">
+		
+		<input type="submit"  value="Autenticar">
+		
+		</form>	
+		
 	</body>
 </html>
